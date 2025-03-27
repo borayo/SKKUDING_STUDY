@@ -119,6 +119,7 @@ main table {
     border: 1px solid #F7C437;
     padding : 20px;
     line-height: 2.5;
+    border-spacing: 0;
 }
 
 
