@@ -40,6 +40,7 @@ nav a {
 .card {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 500px;
     min-width: 200px;
@@ -49,6 +50,14 @@ nav a {
     border-radius: 10px;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    #card-container {
+      grid-template-columns: 1fr;
+      margin: 0 5%;
+    }
+  }
+  
 
 .card:hover {
     border: 3px solid #F7C437;
@@ -63,6 +72,7 @@ nav a {
 
 .card-text {
     display: flex;
+    flex-wrap: wrap;
     text-decoration: none;
     margin-left: 20px;
     flex-direction: column;
